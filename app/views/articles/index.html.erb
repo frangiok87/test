@@ -1,0 +1,16 @@
+
+<div class="container">
+	<h1>Tous les articles</h1>
+	<ul class="list-group" style="width: 30rem;">-
+		<% @les_articles.each do |un_article|%>
+			
+				<li class="list-group-item">
+					<div class="d-flex justify-content-between">
+					<p><%= un_article.title %></p>
+					<a href="/articles/<%= un_article.id %>" class="btn btn-success btn-sm">voir l'article</a>
+					</div>
+				</li>
+			
+		<% end %>
+	</ul>
+</div>
